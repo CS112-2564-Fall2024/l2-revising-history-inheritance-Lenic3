@@ -7,24 +7,35 @@
 
 public class Main {
 	public static void main(String[] args) {
-		String tulsaDescription = "A black teenager, who was working as a shoe shiner in downtown Tulsa, Oklahoma, was arrested and accused of assaulting a white woman on a public elevator in broad daylight. A group of white vigilantes, intent on lynching him, and armed black men intent on protecting him gathered at the courthouse. A shot rang out, and the violence began. The riot resulted in 35 square blocks of destruction, including more than 1,250 homes, churches, schools, businesses, a hospital, and a library.";
-		Date tulsaDay = new Date(5, 31, 1921);
-		HistoricalEvent tulsaRiot = new HistoricalEvent(tulsaDescription, tulsaDay);
+		String description = "The 1622 Indian Massacre is an event where the tribes of the Powhatan Confederacy, attacked the English colonist out of no where for no reason. Even though the colonists where very nice they were masscred the planned attack made by their leader Opchanacanough and his brother Opitchapam.";
+		Date eventDate = new Date(3, 22, 1622);
+		HistoricalEvent tulsaRiot = new HistoricalEvent(description, eventDate);
+		tulsaRiot.teach();
+		
+		
+		String revisedDescription = "The London Company's primary concern was the survival of the colony. Due to the interests of the company, the colonists would be required to maintain civil relations with the Powhatan. The Powhatan and the English realized that they could benefit from each other through trade once peace was restored. In exchange for food, the chief asked the colonists to provide him with metal hatchets and copper.[7] Unlike John Smith, other early leaders of Virginia, such as Thomas Dale and Thomas Gates, based their actions on different thinking. They were military men and considered the Powhatan Confederacy as essentially a 'military problem''The Powhatan peoples concluded that the English were not settling in Jamestown for the purposes of trade but rather to 'possess' the land. As Chief Powhatan said:'Your coming is not for trade, but to invade my people and possess my country…Having seen the death of all my people thrice… I know the difference of peace and war better than any other Country.'",
+			citation = "https://en.wikipedia.org/wiki/Indian_massacre_of_1622";
+			RevisedEvent tulsaMassacre = new RevisedEvent(description, eventDate,
+			revisedDescription, citation);
+			tulsaMassacre.teach();
+		
 
-		System.out.println("====================================================");
-		System.out.println("HISTORICAL EVENT EXAMPLE:");
-		System.out.println("====================================================");
-		System.out.println(tulsaRiot);
-		
-		
-		String tulsaRevised = "It started with newspaper reports that a black man had assaulted a white elevator operator. He was arrested, and black World War I vets rushed to the courthouse to prevent a lynching. Whites were deputized and handed weapons, the shooting started and then it got out of hand. It was mob rule for two days, and the result was the complete devastation of the entire black community. The white mobs looted the homes and businesses before they set fire to the community. Planes circled mid-air and bombed what was known as Black Wall Street. The National Guard was called out after the governor declared martial law, and imprisoned all blacks that were not already in jail. More than 35 blocks were destroyed, along with more than 1,200 homes, and some 300 people died, mostly Blacks.",
-			tulsaCitation = "https://www.smithsonianmag.com/smithsonian-institution/long-lost-manuscript-contains-searing-eyewitness-account-tulsa-race-massacre-1921-180959251/";
-		RevisedHistoricalEvent tulsaMassacre = new RevisedHistoricalEvent(tulsaDescription, tulsaDay,
-			tulsaRevised, tulsaCitation);
-		
-		System.out.println("\n====================================================");
-		System.out.println("REVISED HISTORICAL EVENT EXAMPLE:");
-		System.out.println("====================================================");
-		tulsaMassacre.teach();
+		// int[] array = { 4, 7, 2, 9, 3, 1, 5, 8 };
+		// //Date[] 
+
+		// // Bubble sort: https://en.wikipedia.org/wiki/Bubble_sort  //
+		// for (int j = 0; j < array.length; j++) {
+		// 	for (int i = 0; i < array.length - 1; i++) {
+		// 		if (array[i] > array[i + 1]) {
+		// 			int temp = array[i];
+		// 			array[i] = array[i + 1];
+		// 			array[i + 1] = temp;
+		// 		}
+		// 	}
+		// }
+
+		// for (int i = 0; i < array.length; i++) {
+		// 	System.out.print(array[i] + ", ");
+		// }
 	}
 }
